@@ -78,7 +78,7 @@ print(csvData.tail(), end="\n\n")
 
 
 # Load image data (15,000 images each 64 x 64)
-directory = input("Enter directory of image data: ")
+directory = "archive\data\data"
 
 imageDict = loadImages(directory)
 
@@ -238,8 +238,8 @@ model.save("model")
 model.save("model.h5")
 
 # Load the model to check that it works
-newModel = tf.keras.models.load_model("model", compile=True)
+newModel = tf.keras.models.load_model("model", compile=False)
 
 # If the model needs to be compiled, then run
-#newModel.compile(optimizer="adam", loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-#              metrics=["accuracy"])
+newModel.compile(optimizer="adam", loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+              metrics=["accuracy"])
