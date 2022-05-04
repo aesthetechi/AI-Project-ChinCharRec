@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sun Jan 17 03:39:35 2021
-Last Updated on Wed Aug 11 02:42 2021
-Author: Tyler Pruitt
+Author: Chin Ho Kua
 """
 
 # Import packages
