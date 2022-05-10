@@ -10,7 +10,7 @@ if (isMobile) {
 } else {
   $('#paint').css({'width': '300px'});
   $('#character').css({'font-size': '120px'});
-  $('.predictButton').css({'font-size': '20px'});
+  $('.predictButton').css({'font-size': '20p q  x'});
   $('.clearButton').css({'font-size': '20px'});
 }
 

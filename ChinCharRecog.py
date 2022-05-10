@@ -186,7 +186,7 @@ model = tf.keras.Sequential([
 # Compile the model
 model.compile(optimizer="adam", loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
               metrics=["accuracy"])
-
+    
 # Train the model with the training data
 invalidNumberEpochs = True
 

@@ -1,0 +1,122 @@
+<!-- Chin Ho Kua, 1267789-->
+<!-- HTML PROJECT-->
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <!-- Sidebar -->
+        <nav>
+            <a href="#first">Home</i></a>
+            <a href="#second">Project 1</a>
+            <a href="#third">Project 2</a>
+            <a href="#fourth">Contact Details</i></a>
+        </nav>
+        <!--main page-->   
+        <div class= 'container'> 
+            <section id= 'first'>
+                <h1>Welcome to Chin's Projects page!</h1>
+                <h3> This is a place where I will put my projects.</h3>
+                <p>(this website is also a project)</p>
+            </section>
+           
+            <section id= 'second'>
+                <center>
+                <h1>Chinese Character Recognition</h1>
+            
+                <p>
+                    INTRODUCTION
+                    <br>
+                    Hello! This is my AI Project, where I trained an AI model to recognize chinese characters.
+                    Please keep coming back to see updates and progress!
+                </p>
+            
+                <br>
+                <img src="characters/零.jpg" style="width:128px; height:128px;">
+                <img src="characters/一.jpg" style="width:128px; height:128px;">
+                <img src="characters/二.jpg" style="width:128px; height:128px;">
+                <img src="characters/三.jpg" style="width:128px; height:128px;">
+                <img src="characters/四.jpg" style="width:128px; height:128px;">
+                <br>
+                <br>
+                <img src="characters/五.jpg" style="width:128px; height:128px;">
+                <img src="characters/六.jpg" style="width:128px; height:128px;">
+                <img src="characters/七.jpg" style="width:128px; height:128px;">
+                <img src="characters/八.jpg" style="width:128px; height:128px;">
+                <img src="characters/九.jpg" style="width:128px; height:128px;">
+                <br>
+                <br>
+                <img src="characters/十.jpg" style="width:128px; height:128px;">
+                <img src="characters/百.jpg" style="width:128px; height:128px;">
+                <img src="characters/千.jpg" style="width:128px; height:128px;">
+                <img src="characters/万.jpg" style="width:128px; height:128px;">
+                <img src="characters/亿.jpg" style="width:128px; height:128px;">
+                <br>
+            
+                <p width=80%>
+                    <br> TO USE:
+                    <br> 1) Write the character in the black box below. 
+                    <br>Available characters are 零，一，二，三，四，五，六，
+                    七，八，九，十，百，千，万，and 亿. Attempt to draw the character as close to the sample data shown above 
+                    as the model is sensitive to the way in which the character is written.
+                    <br> 2) Press the 'Predict' button to have the model make a prediction on your writing.
+                    <br> 3) Scroll down to see predicted character along with probability and the bar chart showing of 
+                    the probabilities for all of the characters.
+                </p>
+            
+                <br>
+            
+                <p>
+                    Write the character in the box below.
+                </p>
+            
+                <div id="paint" align="center">
+                    <canvas id="myCanvas" align="center"></canvas>
+                </div>
+            
+                <p>
+                    Below is the recognized character.
+                </p>
+            
+                <button class="predictButton" role="button">PREDICT</button>
+                <button class="clearButton" role="button">CLEAR</button>
+            
+                <div id="predicted">
+                    Recognized character: <div id="character"></div>
+                    Probability: <div id="probability"></div>
+                </div>
+            
+                <!-- Bar Plot -->
+                <canvas id="barchart"></canvas>
+            
+                <p>
+                    <br> Last Updated: May 5th, 2022
+                    <br> Version 2.14
+                </p>
+            
+                <center>
+                
+                <!-- JavaScript -->
+                    
+                <!-- Bar Plot Feature -->
+                <script src="js/barplot.js"></script>
+            
+                <!-- Image Prediction Feature -->
+                <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2/dist/tf.min.js"></script>
+                <script src="js/tensorflow.js"></script>
+            </section>
+           
+           <section id= 'third'>
+                <h5>Another project to arrive here will be the code to this project!</h5>
+            </section>
+           
+           <section id= 'fourth'>
+                <h1>If you'd like to contact me:</h1>
+                <h3>Here are my details!</h3>
+                <p>Email: ckua@nyit.edu</p>
+                <p>Affilation: New York Institute of Technology</p>
+            </section>
+        </div>
+    </body>
+</html>
